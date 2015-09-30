@@ -1,0 +1,4 @@
+---
+
+- include: aws_eip.yml
+  when: aws_eip_ip != ""

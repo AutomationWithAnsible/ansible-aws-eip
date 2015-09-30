@@ -1,0 +1,15 @@
+---
+
+## IP you want to assign
+aws_eip_ip                  : ""
+aws_eip_state               : "present"
+
+## Device ID to associate
+#aws_eip_device_id          : 
+
+## What VPC
+#aws_eip_ip_vpc             :
+
+#aws_eip_region             :
+
+reuse_existing_ip_allowed   : "yes"
