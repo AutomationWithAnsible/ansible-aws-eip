@@ -3,7 +3,7 @@
 - name: aws_eip | Associate an elastic IP with an instance
   ec2_eip: 
     instance_id="{{ aws_eip_device_id }}"
-    ip="{{ aws_eip_ip | default(omit) }}"
+    public_ip="{{ aws_eip_ip | default(omit) }}"
     in_vpc="{{ aws_eip_ip_vpc | default(omit) }}"
     region="{{ aws_eip_region | default(omit) }}"
     reuse_existing_ip_allowed="{{ aws_eip_reuse_existing_ip_allowed | default(omit) }}"
