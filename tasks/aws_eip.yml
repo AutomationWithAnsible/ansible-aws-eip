@@ -8,3 +8,5 @@
     region="{{ aws_eip_region | default(omit) }}"
     reuse_existing_ip_allowed="{{ aws_eip_reuse_existing_ip_allowed | default(omit) }}"
     state="{{ aws_eip_state }}"
+  connection: local
+  delegate_to: localhost
